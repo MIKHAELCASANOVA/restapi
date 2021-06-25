@@ -19,8 +19,8 @@ public class RestapiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry
-					.addMapping("/store/gadget/**")
-					.allowedOrigins("http://localhost:9090") //angular default port
+					.addMapping("/**")
+					.allowedOrigins("http://localhost:8080","*") //angular default port
 					.allowedMethods("GET","POST","PUT","DELETE");
 			}
 		};
